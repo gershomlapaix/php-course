@@ -12,9 +12,16 @@
     <?php
     class Student
     {
+
+        public function __construct()
+        {
+            echo "Object created";
+        }
+
         public $firstName;
 
         function setFirstName($firstName)
+
         {
             $this->firstName = $firstName;
 
@@ -28,9 +35,9 @@
     $std2 = new Student();
     $std2->setFirstName(("Gersh"));
 
-    echo "<br/> current time is ".(new DateTime())->format("M-D-Y");
+    echo "<br/> current time is " . (new DateTime())->format("M-D-Y");
     PHP_EOL;
-    echo "current time is ".(new DateTime())->format("M-D-Y");
+    echo "current time is " . (new DateTime())->format("M-D-Y");
 
     ?>
 </body>
