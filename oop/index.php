@@ -39,6 +39,17 @@
     PHP_EOL;
     echo "current time is " . (new DateTime())->format("M-D-Y");
 
+    // including staticPM
+
+    require_once __DIR__ . '/staticPM.php';
+    $p1 = new Person(null, "Marvin", "Kareem", "kareem@gmail.com");
+
+    echo "<h1>Person's data</h1>";
+
+    echo "Names : ".$p1->getFirstName(). " " .$p1->getLastName()."<br/>";
+
+    echo "Id : ".$p1->getLastId()."<br/>";
+
     ?>
 </body>
 
