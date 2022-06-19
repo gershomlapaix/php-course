@@ -1,6 +1,5 @@
 <?php
 namespace Html;
-
 class Table{
     public $title = "";
     public $numRows = 0;
