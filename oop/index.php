@@ -10,6 +10,12 @@
 
 <body>
     <?php
+
+use Html\Row;
+use Html\Table;
+
+    include "Namespace.php";
+
     class Student
     {
 
@@ -46,15 +52,28 @@
 
     echo "<h1>Person's data</h1>";
 
-    echo "Names : ".$p1->getFirstName(). " " .$p1->getLastName()."<br/>";
+    echo "Names : " . $p1->getFirstName() . " " . $p1->getLastName() . "<br/>";
 
-    echo "Id : ".$p1::getLastId()."<br/>";
+    echo "Id : " . Person::getLastId() . "<br/>";
 
     $p2 = new Person(null, "Bon", "Yve", "bon@gmail.com");
-    echo "\n\nNames : ".$p2->getFirstName(). " " .$p2->getLastName()."<br/>";
+    echo "\n\nNames : " . $p2->getFirstName() . " " . $p2->getLastName() . "<br/>";
 
-    echo "Id : ".$p2::getLastId()."<br/>";
+    echo "Id : " . Person::getLastId() . "<br/>";
 
+
+    // Namespaces
+
+    echo "<br/> <h2>Namespaces</h1>";
+
+    $table = new Table();
+    $table->title = "My table";
+    $table->numRows = 5;
+
+    $row = new Row();
+    $row->numCells = 3;
+
+    $table->message();
     ?>
 </body>
 
