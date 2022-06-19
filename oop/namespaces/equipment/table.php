@@ -46,7 +46,8 @@ class Table
         return $this->cost;
     }
 
-    public function calculateText(){
+    public function calculateText()
+    {
         return $this->cost * 0.18;
     }
 }

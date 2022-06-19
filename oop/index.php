@@ -61,19 +61,6 @@ use Html\Table;
 
     echo "Id : " . Person::getLastId() . "<br/>";
 
-
-    // Namespaces
-
-    echo "<br/> <h2>Namespaces</h1>";
-
-    $table = new Table();
-    $table->title = "My table";
-    $table->numRows = 5;
-
-    $row = new Row();
-    $row->numCells = 3;
-
-    $table->message();
     ?>
 </body>
 
